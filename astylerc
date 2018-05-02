@@ -1,0 +1,46 @@
+# scan directories recursivly for files
+--recursive 
+# preserve modification date; needed by make
+--preserve-date
+# TODO: look up
+--formatted
+# we use \n as mark for line end; git converts automaticly
+--lineend=linux
+
+--mode=c
+
+# we use Mozilla brace style
+--style=mozilla
+# use 4 spaces as one indetion
+--indent=spaces=4
+# no backups
+--suffix=none
+
+# indent case statements in switch statements
+--indent-switches
+# indent case blocks inside case statements
+--indent-cases
+# indent labels
+--indent-labels
+# indent preprocessor blocks, definitions, conditionals
+--indent-preproc-block
+--indent-preproc-define
+--indent-preproc-cond
+
+# padding around operators and commas
+--pad-oper
+--pad-comma
+# insert padding between if/while/for and a paren
+--pad-header
+# one space char between opening '(' and enclosed statement
+--pad-paren-in
+
+# align pointers to type
+--align-pointer=type
+
+# add braces to if statements if there are none
+-j
+
+# break up a line after 80 characters
+--max-code-length=80
+
